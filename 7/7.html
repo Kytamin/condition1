@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="min" type="text" placeholder="Nhập số phút gọi">
+<select id="233">
+    <option value="outside">Ngoại mạng</option>
+    <option value="inside">Nội mạng</option>
+</select>
+<input onclick="handle()" type="button" value="kiểm tra">
+<h2 id="result"></h2>
+</body>
+<script>
+    function handle(){
+        let a=document.getElementById("min").value
+        let b=document.getElementById("233").value
+        if(b==="inside"){
+                 c=a*790
+            document.getElementById("result").innerHTML=` ${c} VND`
+        }else {
+            c=a*1000
+            document.getElementById("result").innerHTML=` ${c} VND`
+        }
+    }
+</script>
+</html>

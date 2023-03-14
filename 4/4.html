@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>biggest number</title>
+</head>
+<body>
+
+</body>
+<script>
+  let a=prompt("nhập vào số bất kì a")
+  let b=prompt("nhập vào số bất kì b")
+  let c=prompt("nhập vào số bất kì c")
+  if(a>b&&a>c){
+    alert(` số ${a} là giá trị lớn nhất`)
+  }else if(b>a&&b>c){
+    alert(`số${b} là giá trị lớn nhất`)
+  }else if (c>a&&c>b){
+    alert(`số ${c} là giá trị lớn nhất`)
+  }else if(a===b&&a===c) {
+    alert(`3 số đã cho có giá tri bằng nhau`)
+  }if((a===""&&b==="")||(a===""&c==="")||(b===""&&c==="")){
+    alert("nhập  ít nhất đủ  2 số để so sánh")
+  }else {
+    alert(" dữ liệu không thực tế")
+  }
+</script>
+</html>
